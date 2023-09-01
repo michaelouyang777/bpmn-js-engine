@@ -1,0 +1,28 @@
+{
+  "name": "bpmn-js-engine",
+  "version": "0.1.0",
+  "author": "Michael",
+  "description": "this is a bnpm-js engine",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "rollup -c -w --bundleConfigAsCjs",
+    "build": "npm run clean && rollup -c --bundleConfigAsCjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.14",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "cross-env": "^7.0.3",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.28.1",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "keywords": [
+    "npm",
+    "package"
+  ]
+}
